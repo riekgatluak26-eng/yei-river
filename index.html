@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Yei River County Youth Association | Youth Voices, Youth Action</title>
+<meta name="description" content="A youth-driven platform in Yei River County, South Sudan. Leadership, skills development, advocacy and positive engagement for young people." />
+<meta name="keywords" content="Yei River County, youth association, South Sudan, youth leadership, youth advocacy, Yei youth" />
+<meta property="og:title" content="Yei River County Youth Association" />
+<meta property="og:description" content="Youth voices, youth action. Building opportunities for young people in Yei River County." />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                ink: '#17181A',
+                navy: '#1D2F52',
+                navyDeep: '#14213D',
+                gold: '#E9A94A',
+                coral: '#DC6B4D',
+                cream: '#FAF7F0',
+                soft: '#F0EAD9',
+                line: '#E4DBC8',
+                mute: '#7A7569',
+                muteLight: '#A8A296',
+            },
+            fontFamily: {
+                display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+                body: ['"Inter"', 'system-ui', 'sans-serif'],
+            },
+        }
+    }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #FAF7F0; color: #17181A; -webkit-font-smoothing: antialiased; }
+
+    .font-display { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; letter-spacing: -0.02em; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal.d1 { transition-delay: 0.08s; }
+    .reveal.d2 { transition-delay: 0.16s; }
+    .reveal.d3 { transition-delay: 0.24s; }
+
+    .nav-a { position: relative; padding-bottom: 3px; font-size: 14px; color: #17181A; }
+    .nav-a::after { content: ''; position: absolute; left: 0; bottom: 0; height: 1.5px; width: 0; background: #DC6B4D; transition: width 0.3s ease; }
+    .nav-a:hover::after { width: 100%; }
+
+    .drop { visibility: hidden; opacity: 0; transform: translateY(4px); transition: opacity 0.2s, transform 0.2s, visibility 0.2s; }
+    .group:hover .drop, .dropwrap.open .drop { visibility: visible; opacity: 1; transform: translateY(0); }
+
+    .mob { transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.32, 0, 0.24, 1); }
+    .mob.on { transform: translateX(0); }
+    .sub { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .sub.on { max-height: 500px; }
+    .subBtn i { transition: transform 0.3s ease; }
+    .subBtn.on i { transform: rotate(180deg); }
+
+    .imgz img { transition: transform 0.9s cubic-bezier(0.2, 0.9, 0.3, 1); }
+    .imgz:hover img { transform: scale(1.05); }
+
+    .heroGrad { background: linear-gradient(180deg, rgba(20,33,61,0.5) 0%, rgba(20,33,61,0.72) 55%, rgba(20,33,61,0.94) 100%); }
+
+    .grain { background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0); background-size: 24px 24px; }
+
+    .hover-lift { transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease; }
+    .hover-lift:hover { transform: translateY(-4px); }
+
+    .btn-arrow svg { transition: transform 0.3s ease; }
+    .btn-arrow:hover svg { transform: translateX(4px); }
+
+    .tick { flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%; background: rgba(29,47,82,0.08); display: inline-flex; align-items: center; justify-content: center; margin-top: 3px; }
+    .tick svg { width: 11px; height: 11px; color: #1D2F52; }
+
+    .num-badge {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #DC6B4D;
+        letter-spacing: 0.08em;
+    }
+</style>
+</head>
+<body>
+
+<!-- TOP STRIP -->
+<div class="bg-navyDeep text-cream/75 text-[12.5px] hidden md:block border-b border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 py-2.5 flex items-center justify-between">
+        <div class="flex items-center gap-6">
+            <a href="tel:+211928788469" class="flex items-center gap-2 hover:text-cream transition">
+                <i data-lucide="phone" class="w-3.5 h-3.5"></i> 0928 788 469
+            </a>
+            <span class="flex items-center gap-2 text-cream/55">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Yei River County, South Sudan
+            </span>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-cream/50">Office of the Chairman</span>
+            <span class="w-px h-3 bg-cream/15"></span>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-cream transition">
+                <i data-lucide="facebook" class="w-3.5 h-3.5"></i> Follow
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- NAV -->
+<header id="nav" class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-line/70">
+    <div class="max-w-6xl mx-auto px-5 md:px-6">
+        <div class="flex items-center justify-between h-[72px] md:h-[84px]">
+
+            <a href="#top" class="flex items-center gap-3 group shrink-0">
+                <div class="w-11 h-11 rounded-2xl bg-navy flex items-center justify-center group-hover:bg-coral transition-colors">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-cream"></i>
+                </div>
+                <div class="leading-tight">
+                    <span class="block font-display text-[17px] md:text-[19px] text-ink">Yei Youth</span>
+                    <span class="block text-[9.5px] uppercase tracking-[0.16em] text-mute font-medium">River County Association</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-7">
+                <a href="#top" class="nav-a">Home</a>
+                <a href="#about" class="nav-a">About</a>
+                <a href="#work" class="nav-a">What We Do</a>
+                <a href="#projects" class="nav-a">Projects</a>
+                <a href="#updates" class="nav-a">Updates</a>
+                <div class="group relative dropwrap">
+                    <button class="nav-a flex items-center gap-1">
+                        Get Involved
+                        <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+                    </button>
+                    <div class="drop absolute left-0 top-full pt-4 w-60 z-40">
+                        <div class="bg-cream rounded-xl border border-line shadow-xl overflow-hidden py-1.5">
+                            <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
+                                <i data-lucide="user-plus" class="w-4 h-4 text-coral"></i> Join the association
+                            </a>
+                            <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
+                                <i data-lucide="users" class="w-4 h-4 text-coral"></i> Volunteer with us
+                            </a>
+                            <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
+                                <i data-lucide="handshake" class="w-4 h-4 text-coral"></i> Partner with us
+                            </a>
+                            <a href="#contact" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
+                                <i data-lucide="message-circle" class="w-4 h-4 text-coral"></i> Contact the office
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact" class="nav-a">Contact</a>
+            </nav>
+
+            <div class="hidden lg:block">
+                <a href="#involved" class="btn-arrow inline-flex items-center gap-2 bg-coral hover:bg-[#c55a3d] text-cream text-[13.5px] font-medium px-5 py-2.5 rounded-full transition">
+                    Get Involved <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+
+            <button id="mBtn" class="lg:hidden w-10 h-10 flex items-center justify-center text-ink" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- MOBILE -->
+<aside id="mPanel" class="mob fixed top-0 right-0 w-[85%] max-w-sm h-full bg-cream z-50 shadow-2xl overflow-y-auto">
+    <div class="flex items-center justify-between p-5 border-b border-line sticky top-0 bg-cream z-10">
+        <span class="font-display text-[18px]">Yei Youth Association</span>
+        <button id="mClose" class="w-9 h-9 flex items-center justify-center text-mute hover:text-ink" aria-label="Close">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+    </div>
+    <nav class="px-5 py-4">
+        <a href="#top" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Home</a>
+        <a href="#about" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">About</a>
+        <a href="#work" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">What We Do</a>
+        <a href="#projects" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Projects</a>
+        <a href="#updates" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Updates</a>
+        <div>
+            <button class="subBtn flex items-center justify-between w-full py-3 text-[15px] text-ink/85">
+                Get Involved <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </button>
+            <div class="sub pl-3">
+                <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Join the association</a>
+                <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Volunteer</a>
+                <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Partner with us</a>
+            </div>
+        </div>
+        <a href="#contact" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Contact</a>
+    </nav>
+    <div class="px-5 pt-4 pb-8 border-t border-line space-y-3">
+        <a href="tel:+211928788469" class="flex items-center gap-3 text-[14px] text-ink"><i data-lucide="phone" class="w-4 h-4 text-coral"></i> 0928 788 469</a>
+        <a href="#involved" class="mClose block text-center bg-coral text-cream font-medium py-3.5 rounded-full mt-2">Get Involved</a>
+    </div>
+</aside>
+<div id="mShade" class="fixed inset-0 bg-ink/60 z-40 hidden"></div>
+
+<main>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[92vh] flex items-end overflow-hidden bg-navyDeep">
+    <img
+        src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2000&q=80"
+        alt="Young people gathered together"
+        class="absolute inset-0 w-full h-full object-cover opacity-90"
+    >
+    <div class="heroGrad absolute inset-0"></div>
+    <div class="grain absolute inset-0 opacity-40"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-16 md:pb-24 w-full">
+        <div class="max-w-3xl text-cream">
+
+            <div class="inline-flex items-center gap-2.5 bg-cream/[0.08] backdrop-blur border border-cream/15 rounded-full px-4 py-1.5 mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                <span class="text-[12px] uppercase tracking-[0.14em] text-cream/85 font-medium">Yei River County, South Sudan</span>
+            </div>
+
+            <h1 class="font-display text-[2.6rem] sm:text-[3.4rem] md:text-[4.4rem] leading-[1.02] mb-7">
+                Every young person in Yei deserves a place to lead.
+            </h1>
+
+            <p class="text-[16px] md:text-[18px] leading-[1.65] text-cream/85 max-w-2xl mb-10">
+                We are a youth-driven platform in Yei River County. Our work brings young people together around leadership, skills and advocacy, and creates real opportunities for the youth who live here.
+            </p>
+
+            <div class="flex flex-wrap gap-3">
+                <a href="#about" class="inline-flex items-center gap-2 bg-cream text-navyDeep font-medium px-6 py-3.5 rounded-full hover:bg-gold transition">
+                    Learn about us <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#involved" class="inline-flex items-center gap-2 border border-cream/30 hover:bg-cream/10 text-cream font-medium px-6 py-3.5 rounded-full transition">
+                    Get involved
+                </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-cream/15 max-w-lg">
+                <div>
+                    <p class="font-display text-[26px] text-gold">1K</p>
+                    <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Youth in network</p>
+                </div>
+                <div>
+                    <p class="font-display text-[26px] text-gold">10</p>
+                    <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Payams reached</p>
+                </div>
+                <div>
+                    <p class="font-display text-[26px] text-gold">2024</p>
+                    <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Growing since</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MISSION STRIP -->
+<section class="bg-soft border-b border-line">
+    <div class="max-w-6xl mx-auto px-6 py-10 md:py-12">
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-2">
+                <p class="text-[11px] uppercase tracking-[0.18em] text-mute font-medium">Our purpose</p>
+            </div>
+            <div class="md:col-span-10">
+                <p class="font-display text-[19px] md:text-[24px] leading-[1.4] text-ink">
+                    To empower young people through leadership, skills development, advocacy and positive engagement.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+
+            <div class="lg:col-span-5 reveal">
+                <p class="num-badge mb-4">01 / About</p>
+                <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-6">
+                    A youth office that actually listens to youth.
+                </h2>
+
+                <div class="space-y-5 text-[15.5px] leading-[1.75] text-ink/75">
+                    <p>
+                        The Yei River County Youth Association is made up of young people from across the county. We sit under the Office of the Chairman and work with youth groups, local leaders and partners to make sure young voices are part of the decisions that affect them.
+                    </p>
+                    <p>
+                        We do not speak for youth. We work alongside them. Whether that means running a peace dialogue in a payam, pushing for the youth centre to get finished, or helping a young person find training, our job is the same. Show up, stay honest, and keep building.
+                    </p>
+                    <p>
+                        Our association is open to any young person in Yei who wants to be part of something. No fees, no politics, no hidden conditions. Just work that matters.
+                    </p>
+                </div>
+
+                <div class="mt-10 p-6 bg-navy rounded-2xl text-cream">
+                    <i data-lucide="quote" class="w-6 h-6 text-gold mb-3"></i>
+                    <p class="font-display text-[19px] md:text-[22px] leading-[1.35] mb-4">
+                        Youth voices. Youth action. That is the whole point.
+                    </p>
+                    <p class="text-[12px] uppercase tracking-[0.16em] text-cream/55">Association principle</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 reveal d1">
+                <div class="imgz rounded-3xl overflow-hidden border border-line shadow-lg">
+                    <img
+                        src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1600&q=80"
+                        alt="Young people in community gathering"
+                        class="w-full h-[400px] md:h-[540px] object-cover"
+                    >
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 mt-6">
+                    <div class="bg-soft rounded-xl p-4">
+                        <p class="font-display text-[22px] text-navy">Yei</p>
+                        <p class="text-[11px] uppercase tracking-[0.1em] text-mute mt-1">Our home</p>
+                    </div>
+                    <div class="bg-soft rounded-xl p-4">
+                        <p class="font-display text-[22px] text-navy">100%</p>
+                        <p class="text-[11px] uppercase tracking-[0.1em] text-mute mt-1">Youth-led</p>
+                    </div>
+                    <div class="bg-soft rounded-xl p-4">
+                        <p class="font-display text-[22px] text-navy">Open</p>
+                        <p class="text-[11px] uppercase tracking-[0.1em] text-mute mt-1">To all youth</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="work" class="py-24 md:py-32 bg-soft border-y border-line relative overflow-hidden">
+    <!-- Soft decorative shape -->
+    <div class="hidden lg:block absolute -top-24 right-0 w-80 h-80 bg-cream rounded-full pointer-events-none opacity-60"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative">
+
+        <!-- Section header -->
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-end mb-16 reveal">
+            <div class="lg:col-span-8">
+                <p class="num-badge mb-4">02 / What we do</p>
+                <h2 class="font-display text-[2rem] md:text-[2.7rem] leading-[1.1] mb-5">
+                    Six areas of work, one goal for Yei.
+                </h2>
+                <p class="text-[15.5px] leading-[1.75] text-ink/75 max-w-xl">
+                    Everything we run fits into one of these areas. If it does not help young people in Yei, we do not do it.
+                </p>
+            </div>
+            <div class="lg:col-span-4 lg:text-right">
+                <div class="inline-flex items-center gap-3 text-[13px] text-mute">
+                    <span>Field work</span>
+                    <span class="w-10 h-px bg-coral/40"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+
+            <!-- 01 Leadership -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                        alt="Young leaders in a training session"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        01
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="graduation-cap" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Leadership development</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Training and mentoring for young leaders. Building the confidence and skills to lead in their communities.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 02 Skills -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d1">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
+                        alt="Skills training session"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        02
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="wrench" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Skills development</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Practical training that leads to work and income. From creativity and innovation to hands-on trades.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 03 Advocacy -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d2">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1200&q=80"
+                        alt="Young person speaking at an event"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        03
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="megaphone" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Advocacy</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Speaking up on issues that matter to youth. Bringing young voices into decisions made at county level and beyond.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 04 Peace building -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d1">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80"
+                        alt="Community gathering for peace"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        04
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="handshake" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Peace building</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Dialogues and community events that bring people together. Because peace starts with youth talking to each other.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 05 Creativity -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d2">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80"
+                        alt="Young people creating together"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        05
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="palette" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Creativity and innovation</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Giving young people a space to build, design and try new ideas. From arts to small businesses and tech.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 06 Community -->
+            <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d3">
+                <div class="imgz h-44 relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80"
+                        alt="Youth community work"
+                        class="w-full h-full object-cover"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
+                    <span class="absolute top-4 left-4 bg-cream/95 backdrop-blur text-navy text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">
+                        06
+                    </span>
+                </div>
+                <div class="p-7">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
+                            <i data-lucide="sprout" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                        </div>
+                        <h3 class="font-display text-[18px]">Community engagement</h3>
+                    </div>
+                    <p class="text-[14px] leading-[1.7] text-ink/70">
+                        Youth-led work that improves life in the county. Clean-ups, awareness drives, sports and public activities.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Bottom closing line -->
+        <div class="mt-16 pt-10 border-t border-line flex flex-wrap items-center justify-between gap-6 reveal">
+            <p class="font-display text-[19px] md:text-[22px] leading-[1.35] text-ink max-w-2xl">
+                If you want to be part of any of these areas, our door is open.
+            </p>
+            <a href="#involved" class="btn-arrow inline-flex items-center gap-2 bg-coral hover:bg-[#c55a3d] text-cream font-medium px-6 py-3.5 rounded-full text-[14px] transition">
+                Get involved <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
+            <div>
+                <p class="num-badge mb-4">03 / Projects</p>
+                <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] max-w-xl">
+                    Things we are building right now.
+                </h2>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-2 text-coral text-[14px] font-medium hover:gap-3 transition-all">
+                Support a project <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="space-y-6">
+
+            <!-- Project 1 -->
+            <article class="grid lg:grid-cols-12 gap-8 items-center bg-soft rounded-3xl border border-line overflow-hidden reveal">
+                <div class="lg:col-span-5">
+                    <div class="imgz h-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
+                            alt="Youth centre construction site"
+                            class="w-full h-[300px] lg:h-[380px] object-cover"
+                        >
+                    </div>
+                </div>
+                <div class="lg:col-span-7 p-7 md:p-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-mute">Under construction</span>
+                        <span class="w-1 h-1 rounded-full bg-mute"></span>
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-coral font-medium">In progress</span>
+                    </div>
+                    <h3 class="font-display text-[22px] md:text-[28px] leading-[1.15] mb-4">
+                        Youth Multipurpose and Development Centre
+                    </h3>
+                    <p class="text-[15px] leading-[1.75] text-ink/75 mb-6">
+                        A permanent space for youth in Yei. The centre will host trainings, meetings, creative work and community events. Construction is ongoing and every step brings it closer to opening.
+                    </p>
+                    <ul class="space-y-2.5 mb-7">
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Space for training and workshops
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Community meeting rooms
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Creative and innovation studios
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[14px]">
+                        Support construction <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="grid lg:grid-cols-12 gap-8 items-center bg-soft rounded-3xl border border-line overflow-hidden reveal">
+                <div class="lg:col-span-5 lg:order-2">
+                    <div class="imgz h-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                            alt="Young people working on creative ideas"
+                            class="w-full h-[300px] lg:h-[380px] object-cover"
+                        >
+                    </div>
+                </div>
+                <div class="lg:col-span-7 p-7 md:p-10 lg:order-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-mute">Launched 2025</span>
+                        <span class="w-1 h-1 rounded-full bg-mute"></span>
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-coral font-medium">Active</span>
+                    </div>
+                    <h3 class="font-display text-[22px] md:text-[28px] leading-[1.15] mb-4">
+                        Youth Empowerment Initiative on Creativity and Innovation
+                    </h3>
+                    <p class="text-[15px] leading-[1.75] text-ink/75 mb-6">
+                        Launched in Yei River County to give young people room to create, experiment and build. The initiative supports youth-led ideas that solve real problems in their own communities.
+                    </p>
+                    <ul class="space-y-2.5 mb-7">
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Mentorship for young creators
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Space to test new ideas
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Support to turn ideas into action
+                        </li>
+                    </ul>
+                    <a href="#involved" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[14px]">
+                        Join the initiative <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- UPDATES -->
+<section id="updates" class="py-24 md:py-32 bg-navyDeep text-cream relative overflow-hidden">
+    <div class="grain absolute inset-0 opacity-30"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative">
+
+        <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
+            <div>
+                <p class="num-badge mb-4" style="color:#E9A94A;">04 / Updates</p>
+                <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] max-w-lg text-cream">
+                    What has been happening in Yei.
+                </h2>
+            </div>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gold text-[14px] font-medium hover:gap-3 transition-all">
+                Follow on Facebook <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-6 hover:bg-cream/[0.08] transition reveal">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                    <span class="text-[11px] uppercase tracking-[0.14em] text-cream/60">Peace dialogue</span>
+                </div>
+                <h3 class="font-display text-[17px] leading-[1.3] mb-3 text-cream">
+                    Yei Town Payam concludes one-day peace dialogue
+                </h3>
+                <p class="text-[13.5px] leading-[1.7] text-cream/65">
+                    Community members and youth leaders came together for a full day of open conversation on peace and how to keep it.
+                </p>
+            </article>
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-6 hover:bg-cream/[0.08] transition reveal d1">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                    <span class="text-[11px] uppercase tracking-[0.14em] text-cream/60">Construction</span>
+                </div>
+                <h3 class="font-display text-[17px] leading-[1.3] mb-3 text-cream">
+                    Youth Multipurpose Centre progress update
+                </h3>
+                <p class="text-[13.5px] leading-[1.7] text-cream/65">
+                    Work on the youth centre is moving forward. Every week brings new progress on a space that will belong to the youth of Yei.
+                </p>
+            </article>
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-6 hover:bg-cream/[0.08] transition reveal d2">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                    <span class="text-[11px] uppercase tracking-[0.14em] text-cream/60">New initiative</span>
+                </div>
+                <h3 class="font-display text-[17px] leading-[1.3] mb-3 text-cream">
+                    Creativity and Innovation initiative launched
+                </h3>
+                <p class="text-[13.5px] leading-[1.7] text-cream/65">
+                    A new program has opened in Yei giving young people a place to build, design and try out their ideas.
+                </p>
+            </article>
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-6 hover:bg-cream/[0.08] transition reveal d3">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+                    <span class="text-[11px] uppercase tracking-[0.14em] text-cream/60">Courtesy visit</span>
+                </div>
+                <h3 class="font-display text-[17px] leading-[1.3] mb-3 text-cream">
+                    State Youth Chairman visits Yei association
+                </h3>
+                <p class="text-[13.5px] leading-[1.7] text-cream/65">
+                    The Central Equatoria State Youth Chairman paid a courtesy visit to our office and met with youth leaders from across the county.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-cream/10 flex flex-wrap items-center justify-between gap-4 reveal">
+            <p class="text-[14px] text-cream/65 max-w-lg">
+                These are small steps, but they add up. Follow our page for the latest news as it happens.
+            </p>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-gold text-navyDeep font-medium px-5 py-3 rounded-full text-[13.5px] hover:bg-cream transition">
+                Visit Facebook page <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- VOICES -->
+<section class="py-24 md:py-32 bg-cream">
+    <div class="max-w-4xl mx-auto px-6 text-center reveal">
+        <i data-lucide="quote" class="w-8 h-8 text-coral mx-auto mb-6"></i>
+        <p class="font-display text-[1.6rem] md:text-[2.1rem] leading-[1.3] text-ink mb-8">
+            Young people are not the future of Yei. They are part of Yei right now, and their voices belong in every room where decisions are made.
+        </p>
+        <div class="inline-flex items-center gap-3 text-[13px] text-mute">
+            <span class="w-8 h-px bg-coral/40"></span>
+            <span>Yei River County Youth Association</span>
+            <span class="w-8 h-px bg-coral/40"></span>
+        </div>
+    </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="involved" class="py-24 md:py-32 bg-soft border-y border-line">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="max-w-2xl mb-14 reveal">
+            <p class="num-badge mb-4">05 / Get involved</p>
+            <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5">
+                There is a place for you here.
+            </h2>
+            <p class="text-[15.5px] leading-[1.75] text-ink/75">
+                Whether you live in Yei or you are watching from far away, there are real ways to be part of what we are building.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="user-plus" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[20px] mb-3">Join the association</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
+                    If you are a young person in Yei River County, you are welcome to be part of the association. Reach out and we will connect you with the right people.
+                </p>
+                <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
+                    Join us <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </article>
+
+            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal d1">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="users" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[20px] mb-3">Volunteer</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
+                    Trainers, mentors, organizers and people with skills to share are always needed. If you can give time, we will find a way to use it well.
+                </p>
+                <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
+                    Volunteer <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </article>
+
+            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal d2">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="handshake" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[20px] mb-3">Partner with us</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
+                    NGOs, businesses, churches and community groups are welcome to work with us. We are open to new partnerships that help youth in Yei.
+                </p>
+                <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
+                    Partner with us <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 md:py-32 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+            <div class="lg:col-span-5 reveal">
+                <p class="num-badge mb-4">06 / Contact</p>
+                <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5">
+                    Talk to the office.
+                </h2>
+                <p class="text-[15.5px] leading-[1.75] text-ink/75 mb-10">
+                    Whether you want to join, volunteer, partner or just ask a question, you can reach the Office of the Chairman directly.
+                </p>
+
+                <div class="space-y-5">
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-soft border border-line flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-coral"></i>
+                        </div>
+                        <div class="pt-0.5">
+                            <p class="text-[11.5px] uppercase tracking-[0.14em] text-mute mb-1">Location</p>
+                            <p class="text-[15px] text-ink">Yei River County, South Sudan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-soft border border-line flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5 text-coral"></i>
+                        </div>
+                        <div class="pt-0.5">
+                            <p class="text-[11.5px] uppercase tracking-[0.14em] text-mute mb-1">Phone</p>
+                            <a href="tel:+211928788469" class="text-[15px] text-ink hover:text-coral transition">0928 788 469</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-soft border border-line flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="facebook" class="w-5 h-5 text-coral"></i>
+                        </div>
+                        <div class="pt-0.5">
+                            <p class="text-[11.5px] uppercase tracking-[0.14em] text-mute mb-1">Facebook</p>
+                            <a href="https://facebook.com" target="_blank" rel="noopener" class="text-[15px] text-ink hover:text-coral transition">
+                                Yei River County Youth Association
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 reveal d1">
+                <form id="cForm" class="bg-soft rounded-2xl border border-line p-7 md:p-9">
+                    <h3 class="font-display text-[22px] mb-2">Send a message</h3>
+                    <p class="text-[13.5px] text-mute mb-8">We will get back to you as soon as we can.</p>
+
+                    <div class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[12px] uppercase tracking-[0.1em] text-mute mb-2">Your name</label>
+                                <input type="text" required placeholder="Full name" class="w-full px-4 py-3 rounded-lg border border-line bg-cream text-[14.5px] text-ink placeholder-mute/50 focus:border-coral focus:ring-1 focus:ring-coral/20 outline-none transition" />
+                            </div>
+                            <div>
+                                <label class="block text-[12px] uppercase tracking-[0.1em] text-mute mb-2">Phone or email</label>
+                                <input type="text" required placeholder="How to reach you" class="w-full px-4 py-3 rounded-lg border border-line bg-cream text-[14.5px] text-ink placeholder-mute/50 focus:border-coral focus:ring-1 focus:ring-coral/20 outline-none transition" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[12px] uppercase tracking-[0.1em] text-mute mb-2">What is this about?</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-line bg-cream text-[14.5px] text-ink focus:border-coral focus:ring-1 focus:ring-coral/20 outline-none transition">
+                                <option disabled selected>Choose one</option>
+                                <option>Joining the association</option>
+                                <option>Volunteering</option>
+                                <option>Partnership</option>
+                                <option>Supporting a project</option>
+                                <option>Media request</option>
+                                <option>General question</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-[12px] uppercase tracking-[0.1em] text-mute mb-2">Message</label>
+                            <textarea required rows="5" placeholder="Write your message here..." class="w-full px-4 py-3 rounded-lg border border-line bg-cream text-[14.5px] text-ink placeholder-mute/50 focus:border-coral focus:ring-1 focus:ring-coral/20 outline-none resize-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-coral hover:bg-[#c55a3d] text-cream font-medium py-4 rounded-lg flex items-center justify-center gap-2 transition">
+                            Send message <i data-lucide="send" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING -->
+<section class="py-20 md:py-24 bg-navyDeep text-cream relative overflow-hidden">
+    <div class="grain absolute inset-0 opacity-30"></div>
+    <div class="relative max-w-4xl mx-auto px-6 text-center reveal">
+        <h2 class="font-display text-[1.9rem] md:text-[2.5rem] leading-[1.2] text-cream mb-5">
+            Youth voices. Youth action.
+        </h2>
+        <p class="text-[15.5px] leading-[1.75] text-cream/70 max-w-2xl mx-auto mb-9">
+            If you are a young person in Yei River County, or if you want to support the young people who live here, this is your office too.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3">
+            <a href="#involved" class="inline-flex items-center gap-2 bg-gold text-navyDeep font-medium px-6 py-3.5 rounded-full hover:bg-cream transition">
+                Get involved <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="tel:+211928788469" class="inline-flex items-center gap-2 border border-cream/30 hover:bg-cream/10 text-cream font-medium px-6 py-3.5 rounded-full transition">
+                Call the office
+            </a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navyDeep text-cream/70 border-t border-white/[0.06]">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+        <div class="grid md:grid-cols-12 gap-10">
+
+            <div class="md:col-span-5">
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-11 h-11 rounded-2xl bg-coral flex items-center justify-center">
+                        <i data-lucide="sparkles" class="w-5 h-5 text-cream"></i>
+                    </div>
+                    <div>
+                        <p class="font-display text-[18px] text-cream leading-tight">Yei River County</p>
+                        <p class="text-[10px] uppercase tracking-[0.16em] text-cream/50">Youth Association</p>
+                    </div>
+                </div>
+                <p class="text-[14px] leading-[1.75] text-cream/65 max-w-sm mb-6">
+                    A youth-driven platform for leadership, skills development, advocacy and positive engagement in Yei River County, South Sudan.
+                </p>
+                <a href="#involved" class="inline-flex items-center gap-2 bg-coral hover:bg-[#c55a3d] text-cream font-medium px-5 py-2.5 rounded-full text-[13.5px] transition">
+                    Get involved <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </div>
+
+            <div class="md:col-span-3">
+                <p class="text-cream text-[13px] font-medium uppercase tracking-[0.1em] mb-5">Explore</p>
+                <ul class="space-y-3 text-[13.5px]">
+                    <li><a href="#about" class="text-cream/60 hover:text-cream transition">About</a></li>
+                    <li><a href="#work" class="text-cream/60 hover:text-cream transition">What we do</a></li>
+                    <li><a href="#projects" class="text-cream/60 hover:text-cream transition">Projects</a></li>
+                    <li><a href="#updates" class="text-cream/60 hover:text-cream transition">Updates</a></li>
+                    <li><a href="#involved" class="text-cream/60 hover:text-cream transition">Get involved</a></li>
+                    <li><a href="#contact" class="text-cream/60 hover:text-cream transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4">
+                <p class="text-cream text-[13px] font-medium uppercase tracking-[0.1em] mb-5">Reach the office</p>
+                <ul class="space-y-3.5 text-[13.5px] text-cream/65">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
+                        <span>Yei River County, Central Equatoria State, South Sudan</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="phone" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
+                        <a href="tel:+211928788469" class="hover:text-cream transition">0928 788 469</a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="facebook" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
+                        <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-cream transition">Yei River County Youth Association</a>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="landmark" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
+                        <span>Office of the Chairman</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="border-t border-white/[0.08] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12.5px] text-cream/45">
+            <p>&copy; 2026 Yei River County Youth Association. All rights reserved.</p>
+            <p>Youth voices. Youth action.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+if (window.lucide) lucide.createIcons();
+
+// Reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => io.observe(el));
+
+// Mobile menu
+const mBtn = document.getElementById('mBtn');
+const mClose = document.getElementById('mClose');
+const mPanel = document.getElementById('mPanel');
+const mShade = document.getElementById('mShade');
+const mCloseLinks = document.querySelectorAll('.mClose');
+const subBtns = document.querySelectorAll('.subBtn');
+const subs = document.querySelectorAll('.sub');
+
+function openMenu() {
+    mPanel.classList.add('on');
+    mShade.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+function closeMenu() {
+    mPanel.classList.remove('on');
+    mShade.classList.add('hidden');
+    document.body.style.overflow = '';
+    subs.forEach(s => s.classList.remove('on'));
+    subBtns.forEach(b => b.classList.remove('on'));
+}
+if (mBtn) mBtn.addEventListener('click', openMenu);
+if (mClose) mClose.addEventListener('click', closeMenu);
+if (mShade) mShade.addEventListener('click', closeMenu);
+mCloseLinks.forEach(l => l.addEventListener('click', closeMenu));
+
+subBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const sub = btn.nextElementSibling;
+        const open = sub.classList.contains('on');
+        subs.forEach(s => s.classList.remove('on'));
+        subBtns.forEach(x => x.classList.remove('on'));
+        if (!open) {
+            sub.classList.add('on');
+            btn.classList.add('on');
+        }
+    });
+});
+
+// Desktop dropdown
+const drops = document.querySelectorAll('.dropwrap');
+drops.forEach(d => {
+    const b = d.querySelector('button');
+    if (b) {
+        b.addEventListener('click', (e) => {
+            e.stopPropagation();
+            drops.forEach(x => { if (x !== d) x.classList.remove('open'); });
+            d.classList.toggle('open');
+        });
+    }
+});
+document.addEventListener('click', () => drops.forEach(d => d.classList.remove('open')));
+
+// Header shadow on scroll
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 12) nav.classList.add('shadow-sm');
+    else nav.classList.remove('shadow-sm');
+}, { passive: true });
+
+// Smooth scroll with header offset
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+            e.preventDefault();
+            const y = target.getBoundingClientRect().top + window.scrollY - 88;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            history.pushState(null, null, href);
+        }
+    });
+});
+
+// Contact form
+const cForm = document.getElementById('cForm');
+if (cForm) {
+    cForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = cForm.querySelector('button[type="submit"]');
+        const original = btn.innerHTML;
+        btn.innerHTML = '<i data-lucide="check" class="w-4 h-4"></i> Message sent';
+        btn.disabled = true;
+        if (window.lucide) lucide.createIcons();
+        setTimeout(() => {
+            btn.innerHTML = original;
+            btn.disabled = false;
+            cForm.reset();
+            if (window.lucide) lucide.createIcons();
+        }, 2400);
+    });
+}
+</script>
+</body>
+</html>
