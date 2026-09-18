@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Yei River County Youth Association | Youth Voices, Youth Action</title>
-<meta name="description" content="A youth-driven platform in Yei River County, South Sudan. Leadership, skills development, advocacy and positive engagement for young people." />
-<meta name="keywords" content="Yei River County, youth association, South Sudan, youth leadership, youth advocacy, Yei youth" />
-<meta property="og:title" content="Yei River County Youth Association" />
-<meta property="og:description" content="Youth voices, youth action. Building opportunities for young people in Yei River County." />
+<title>Yei River County Youth Association (YRC-YA) | Youth Voices, Youth Action</title>
+<meta name="description" content="YRC-YA is an independent, youth-led, non-political, non-religious, non-profit initiative in Yei River County, South Sudan. Mobilizing, uniting, empowering and advocating for young people and youth groups." />
+<meta name="keywords" content="Yei River County, YRC-YA, youth association, South Sudan, youth leadership, youth advocacy, boda-boda, disability, youth empowerment, Central Equatoria" />
+<meta property="og:title" content="Yei River County Youth Association (YRC-YA)" />
+<meta property="og:description" content="Youth voices, youth action. Mobilizing, uniting, empowering and advocating for young people in Yei River County." />
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -90,6 +90,9 @@ tailwind.config = {
         color: #DC6B4D;
         letter-spacing: 0.08em;
     }
+
+    .value-card { transition: transform 0.35s ease, background-color 0.35s ease, border-color 0.35s ease; }
+    .value-card:hover { transform: translateY(-4px); background: rgba(250,247,240,0.08); border-color: rgba(233,169,74,0.35); }
 </style>
 </head>
 <body>
@@ -102,11 +105,11 @@ tailwind.config = {
                 <i data-lucide="phone" class="w-3.5 h-3.5"></i> 0928 788 469
             </a>
             <span class="flex items-center gap-2 text-cream/55">
-                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Yei River County, South Sudan
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Yei River County, Central Equatoria State
             </span>
         </div>
         <div class="flex items-center gap-4">
-            <span class="text-cream/50">Office of the Chairman</span>
+            <span class="text-cream/50">Independent · Youth-led · Non-profit</span>
             <span class="w-px h-3 bg-cream/15"></span>
             <a href="https://facebook.com" target="_blank" rel="noopener" class="flex items-center gap-2 hover:text-cream transition">
                 <i data-lucide="facebook" class="w-3.5 h-3.5"></i> Follow
@@ -125,14 +128,15 @@ tailwind.config = {
                     <i data-lucide="sparkles" class="w-5 h-5 text-cream"></i>
                 </div>
                 <div class="leading-tight">
-                    <span class="block font-display text-[17px] md:text-[19px] text-ink">Yei Youth</span>
-                    <span class="block text-[9.5px] uppercase tracking-[0.16em] text-mute font-medium">River County Association</span>
+                    <span class="block font-display text-[17px] md:text-[19px] text-ink">YRC-YA</span>
+                    <span class="block text-[9.5px] uppercase tracking-[0.16em] text-mute font-medium">Yei River County Youth Association</span>
                 </div>
             </a>
 
-            <nav class="hidden lg:flex items-center gap-7">
+            <nav class="hidden lg:flex items-center gap-6">
                 <a href="#top" class="nav-a">Home</a>
                 <a href="#about" class="nav-a">About</a>
+                <a href="#vision" class="nav-a">Vision &amp; Values</a>
                 <a href="#work" class="nav-a">What We Do</a>
                 <a href="#projects" class="nav-a">Projects</a>
                 <a href="#updates" class="nav-a">Updates</a>
@@ -141,13 +145,13 @@ tailwind.config = {
                         Get Involved
                         <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
                     </button>
-                    <div class="drop absolute left-0 top-full pt-4 w-60 z-40">
+                    <div class="drop absolute left-0 top-full pt-4 w-64 z-40">
                         <div class="bg-cream rounded-xl border border-line shadow-xl overflow-hidden py-1.5">
                             <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
                                 <i data-lucide="user-plus" class="w-4 h-4 text-coral"></i> Join the association
                             </a>
                             <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
-                                <i data-lucide="users" class="w-4 h-4 text-coral"></i> Volunteer with us
+                                <i data-lucide="users" class="w-4 h-4 text-coral"></i> Register your youth group
                             </a>
                             <a href="#involved" class="flex items-center gap-3 px-4 py-2.5 text-[13.5px] text-ink/85 hover:bg-soft hover:text-ink transition">
                                 <i data-lucide="handshake" class="w-4 h-4 text-coral"></i> Partner with us
@@ -177,7 +181,7 @@ tailwind.config = {
 <!-- MOBILE -->
 <aside id="mPanel" class="mob fixed top-0 right-0 w-[85%] max-w-sm h-full bg-cream z-50 shadow-2xl overflow-y-auto">
     <div class="flex items-center justify-between p-5 border-b border-line sticky top-0 bg-cream z-10">
-        <span class="font-display text-[18px]">Yei Youth Association</span>
+        <span class="font-display text-[18px]">YRC-YA</span>
         <button id="mClose" class="w-9 h-9 flex items-center justify-center text-mute hover:text-ink" aria-label="Close">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
@@ -185,6 +189,7 @@ tailwind.config = {
     <nav class="px-5 py-4">
         <a href="#top" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Home</a>
         <a href="#about" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">About</a>
+        <a href="#vision" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Vision &amp; Values</a>
         <a href="#work" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">What We Do</a>
         <a href="#projects" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Projects</a>
         <a href="#updates" class="mClose block py-3 text-[15px] text-ink/85 hover:text-coral">Updates</a>
@@ -194,7 +199,7 @@ tailwind.config = {
             </button>
             <div class="sub pl-3">
                 <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Join the association</a>
-                <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Volunteer</a>
+                <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Register your youth group</a>
                 <a href="#involved" class="mClose block py-2.5 text-[14px] text-mute hover:text-coral">Partner with us</a>
             </div>
         </div>
@@ -213,7 +218,7 @@ tailwind.config = {
 <section id="top" class="relative min-h-[92vh] flex items-end overflow-hidden bg-navyDeep">
     <img
         src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2000&q=80"
-        alt="Young people gathered together"
+        alt="Young people gathered together in Yei River County"
         class="absolute inset-0 w-full h-full object-cover opacity-90"
     >
     <div class="heroGrad absolute inset-0"></div>
@@ -224,15 +229,15 @@ tailwind.config = {
 
             <div class="inline-flex items-center gap-2.5 bg-cream/[0.08] backdrop-blur border border-cream/15 rounded-full px-4 py-1.5 mb-8">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
-                <span class="text-[12px] uppercase tracking-[0.14em] text-cream/85 font-medium">Yei River County, South Sudan</span>
+                <span class="text-[12px] uppercase tracking-[0.14em] text-cream/85 font-medium">Yei River County · Central Equatoria State</span>
             </div>
 
             <h1 class="font-display text-[2.6rem] sm:text-[3.4rem] md:text-[4.4rem] leading-[1.02] mb-7">
-                Every young person in Yei deserves a place to lead.
+                Uniting young people to lead Yei forward.
             </h1>
 
             <p class="text-[16px] md:text-[18px] leading-[1.65] text-cream/85 max-w-2xl mb-10">
-                We are a youth-driven platform in Yei River County. Our work brings young people together around leadership, skills and advocacy, and creates real opportunities for the youth who live here.
+                YRC-YA is an independent, youth-led initiative that mobilizes, unites, empowers and advocates for the rights of young people across Yei River County — including boda-boda riders, persons with disabilities, faith-based groups, and music and drama groups.
             </p>
 
             <div class="flex flex-wrap gap-3">
@@ -246,7 +251,7 @@ tailwind.config = {
 
             <div class="grid grid-cols-3 gap-6 mt-14 pt-8 border-t border-cream/15 max-w-lg">
                 <div>
-                    <p class="font-display text-[26px] text-gold">1K</p>
+                    <p class="font-display text-[26px] text-gold">1K+</p>
                     <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Youth in network</p>
                 </div>
                 <div>
@@ -254,8 +259,8 @@ tailwind.config = {
                     <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Payams reached</p>
                 </div>
                 <div>
-                    <p class="font-display text-[26px] text-gold">2024</p>
-                    <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Growing since</p>
+                    <p class="font-display text-[26px] text-gold">6+</p>
+                    <p class="text-[11px] uppercase tracking-[0.12em] text-cream/55 mt-1">Youth groups united</p>
                 </div>
             </div>
 
@@ -268,11 +273,11 @@ tailwind.config = {
     <div class="max-w-6xl mx-auto px-6 py-10 md:py-12">
         <div class="grid md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
-                <p class="text-[11px] uppercase tracking-[0.18em] text-mute font-medium">Our purpose</p>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-mute font-medium">Our mission</p>
             </div>
             <div class="md:col-span-10">
                 <p class="font-display text-[19px] md:text-[24px] leading-[1.4] text-ink">
-                    To empower young people through leadership, skills development, advocacy and positive engagement.
+                    Empowering youth without discrimination on gender or any other affiliations through income-generating initiatives and formal education with basic teaching or vocational skills.
                 </p>
             </div>
         </div>
@@ -292,13 +297,13 @@ tailwind.config = {
 
                 <div class="space-y-5 text-[15.5px] leading-[1.75] text-ink/75">
                     <p>
-                        The Yei River County Youth Association is made up of young people from across the county. We sit under the Office of the Chairman and work with youth groups, local leaders and partners to make sure young voices are part of the decisions that affect them.
+                        The Yei River County Youth Association (YRC-YA) is an independent, youth-led initiative that is non-political, non-religious and non-profit making. We exist to mobilize, unite, empower and advocate for the rights of young people and other youth groups across Yei River County.
                     </p>
                     <p>
-                        We do not speak for youth. We work alongside them. Whether that means running a peace dialogue in a payam, pushing for the youth centre to get finished, or helping a young person find training, our job is the same. Show up, stay honest, and keep building.
+                        Our work is built around advocacy, empowerment through youth engagement and impact forums, and amplifying local voices of young people. We do this to improve and advance social behaviour change and sustainable development for the young people of Yei River County in Central Equatoria State.
                     </p>
                     <p>
-                        Our association is open to any young person in Yei who wants to be part of something. No fees, no politics, no hidden conditions. Just work that matters.
+                        We do not speak for youth. We work alongside them — boda-boda riders, persons with disabilities, faith-based groups, music and drama groups, women and girls, students and out-of-school youth. Our association is open to any young person in Yei who wants to be part of something. No fees, no politics, no hidden conditions. Just work that matters.
                     </p>
                 </div>
 
@@ -315,7 +320,7 @@ tailwind.config = {
                 <div class="imgz rounded-3xl overflow-hidden border border-line shadow-lg">
                     <img
                         src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=1600&q=80"
-                        alt="Young people in community gathering"
+                        alt="Young people in community gathering in Yei"
                         class="w-full h-[400px] md:h-[540px] object-cover"
                     >
                 </div>
@@ -340,6 +345,104 @@ tailwind.config = {
     </div>
 </section>
 
+<!-- VISION, MISSION & CORE VALUES -->
+<section id="vision" class="py-24 md:py-32 bg-navyDeep text-cream relative overflow-hidden">
+    <div class="grain absolute inset-0 opacity-30"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative">
+
+        <div class="max-w-2xl mb-14 reveal">
+            <p class="num-badge mb-4" style="color:#E9A94A;">02 / Vision, Mission &amp; Values</p>
+            <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5 text-cream">
+                What we are building, and how we build it.
+            </h2>
+            <p class="text-[15.5px] leading-[1.75] text-cream/70">
+                Everything YRC-YA does is guided by a clear vision, a practical mission and four values that keep us honest.
+            </p>
+        </div>
+
+        <!-- Vision & Mission -->
+        <div class="grid md:grid-cols-2 gap-5 mb-16">
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-8 reveal">
+                <div class="w-11 h-11 rounded-xl bg-gold/15 flex items-center justify-center mb-6">
+                    <i data-lucide="telescope" class="w-5 h-5 text-gold"></i>
+                </div>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-gold font-medium mb-3">Vision</p>
+                <p class="font-display text-[19px] md:text-[22px] leading-[1.4] text-cream">
+                    To raise global youth leaders, unify and empower them to become the agents of world social, political and economic transformation.
+                </p>
+            </article>
+
+            <article class="bg-cream/[0.04] border border-cream/10 rounded-2xl p-8 reveal d1">
+                <div class="w-11 h-11 rounded-xl bg-coral/15 flex items-center justify-center mb-6">
+                    <i data-lucide="target" class="w-5 h-5 text-coral"></i>
+                </div>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-coral font-medium mb-3">Mission</p>
+                <p class="font-display text-[19px] md:text-[22px] leading-[1.4] text-cream">
+                    Empowering youth without discrimination on gender or any other affiliations through income-generating initiatives and formal education with basic teaching or vocational skills.
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Core values -->
+        <div class="flex items-end justify-between gap-6 mb-10 reveal">
+            <div>
+                <p class="text-[11px] uppercase tracking-[0.18em] text-gold font-medium mb-2">Core values</p>
+                <h3 class="font-display text-[1.6rem] md:text-[2rem] leading-[1.15] text-cream">
+                    Four values. Every decision.
+                </h3>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <article class="value-card bg-cream/[0.04] border border-cream/10 rounded-2xl p-7 reveal">
+                <div class="w-11 h-11 rounded-xl bg-cream/[0.06] flex items-center justify-center mb-6">
+                    <i data-lucide="dove" class="w-5 h-5 text-gold"></i>
+                </div>
+                <p class="font-display text-[19px] text-cream mb-3">Peace</p>
+                <p class="text-[13.5px] leading-[1.75] text-cream/65">
+                    We prioritize conflict resolution and long-term stability in everything we do.
+                </p>
+            </article>
+
+            <article class="value-card bg-cream/[0.04] border border-cream/10 rounded-2xl p-7 reveal d1">
+                <div class="w-11 h-11 rounded-xl bg-cream/[0.06] flex items-center justify-center mb-6">
+                    <i data-lucide="users" class="w-5 h-5 text-gold"></i>
+                </div>
+                <p class="font-display text-[19px] text-cream mb-3">Inclusivity</p>
+                <p class="text-[13.5px] leading-[1.75] text-cream/65">
+                    We ensure all community members, including marginalized groups, are included in the recovery process.
+                </p>
+            </article>
+
+            <article class="value-card bg-cream/[0.04] border border-cream/10 rounded-2xl p-7 reveal d2">
+                <div class="w-11 h-11 rounded-xl bg-cream/[0.06] flex items-center justify-center mb-6">
+                    <i data-lucide="leaf" class="w-5 h-5 text-gold"></i>
+                </div>
+                <p class="font-display text-[19px] text-cream mb-3">Resilience &amp; sustainability</p>
+                <p class="text-[13.5px] leading-[1.75] text-cream/65">
+                    We commit to environmental stewardship and build systems and structures that can withstand future challenges and crises.
+                </p>
+            </article>
+
+            <article class="value-card bg-cream/[0.04] border border-cream/10 rounded-2xl p-7 reveal d3">
+                <div class="w-11 h-11 rounded-xl bg-cream/[0.06] flex items-center justify-center mb-6">
+                    <i data-lucide="handshake" class="w-5 h-5 text-gold"></i>
+                </div>
+                <p class="font-display text-[19px] text-cream mb-3">Collaboration</p>
+                <p class="text-[13.5px] leading-[1.75] text-cream/65">
+                    We work in partnership with local, national and international stakeholders to achieve common goals.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
 <!-- WHAT WE DO -->
 <section id="work" class="py-24 md:py-32 bg-soft border-y border-line relative overflow-hidden">
     <!-- Soft decorative shape -->
@@ -350,7 +453,7 @@ tailwind.config = {
         <!-- Section header -->
         <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-end mb-16 reveal">
             <div class="lg:col-span-8">
-                <p class="num-badge mb-4">02 / What we do</p>
+                <p class="num-badge mb-4">03 / What we do</p>
                 <h2 class="font-display text-[2rem] md:text-[2.7rem] leading-[1.1] mb-5">
                     Six areas of work, one goal for Yei.
                 </h2>
@@ -369,12 +472,12 @@ tailwind.config = {
         <!-- Cards grid -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
 
-            <!-- 01 Leadership -->
+            <!-- 01 Advocacy -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-                        alt="Young leaders in a training session"
+                        src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1200&q=80"
+                        alt="Young person speaking at an advocacy event"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -385,22 +488,22 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="graduation-cap" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="megaphone" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Leadership development</h3>
+                        <h3 class="font-display text-[18px]">Advocacy &amp; rights</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Training and mentoring for young leaders. Building the confidence and skills to lead in their communities.
+                        Speaking up on issues that matter to youth and amplifying local voices so young people are part of the decisions that affect them.
                     </p>
                 </div>
             </article>
 
-            <!-- 02 Skills -->
+            <!-- 02 Empowerment -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d1">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
-                        alt="Skills training session"
+                        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+                        alt="Youth empowerment and income generating work"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -411,22 +514,22 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="wrench" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="sprout" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Skills development</h3>
+                        <h3 class="font-display text-[18px]">Empowerment &amp; income</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Practical training that leads to work and income. From creativity and innovation to hands-on trades.
+                        Supporting income-generating initiatives that help young people earn, save and stand on their own.
                     </p>
                 </div>
             </article>
 
-            <!-- 03 Advocacy -->
+            <!-- 03 Education & vocational -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d2">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1200&q=80"
-                        alt="Young person speaking at an event"
+                        src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=80"
+                        alt="Vocational skills training session"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -437,22 +540,22 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="megaphone" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="graduation-cap" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Advocacy</h3>
+                        <h3 class="font-display text-[18px]">Education &amp; vocational skills</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Speaking up on issues that matter to youth. Bringing young voices into decisions made at county level and beyond.
+                        Formal education support with basic teaching, plus practical vocational skills that lead to work and income.
                     </p>
                 </div>
             </article>
 
-            <!-- 04 Peace building -->
+            <!-- 04 Engagement & impact forums -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d1">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80"
-                        alt="Community gathering for peace"
+                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                        alt="Youth engagement and impact forum"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -463,22 +566,22 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="handshake" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="messages-square" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Peace building</h3>
+                        <h3 class="font-display text-[18px]">Youth engagement &amp; impact forums</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Dialogues and community events that bring people together. Because peace starts with youth talking to each other.
+                        Bringing young people together in forums where their voices are heard, recorded and acted on.
                     </p>
                 </div>
             </article>
 
-            <!-- 05 Creativity -->
+            <!-- 05 Social behaviour change -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d2">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80"
-                        alt="Young people creating together"
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                        alt="Young people discussing social behaviour change"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -489,22 +592,22 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="palette" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="refresh-cw" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Creativity and innovation</h3>
+                        <h3 class="font-display text-[18px]">Social behaviour change</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Giving young people a space to build, design and try new ideas. From arts to small businesses and tech.
+                        Awareness drives and dialogue that improve and advance social behaviour change for sustainable development.
                     </p>
                 </div>
             </article>
 
-            <!-- 06 Community -->
+            <!-- 06 Unity & mobilization -->
             <article class="group bg-cream rounded-2xl border border-line overflow-hidden hover-lift hover:border-coral/40 reveal d3">
                 <div class="imgz h-44 relative">
                     <img
-                        src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=80"
-                        alt="Youth community work"
+                        src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80"
+                        alt="Youth groups united in community"
                         class="w-full h-full object-cover"
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-navyDeep/70 to-transparent"></div>
@@ -515,12 +618,12 @@ tailwind.config = {
                 <div class="p-7">
                     <div class="flex items-center gap-3 mb-3">
                         <div class="w-9 h-9 rounded-lg bg-navy/[0.06] flex items-center justify-center group-hover:bg-coral transition-colors">
-                            <i data-lucide="sprout" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
+                            <i data-lucide="users" class="w-4.5 h-4.5 text-navy group-hover:text-cream transition-colors"></i>
                         </div>
-                        <h3 class="font-display text-[18px]">Community engagement</h3>
+                        <h3 class="font-display text-[18px]">Unity &amp; mobilization</h3>
                     </div>
                     <p class="text-[14px] leading-[1.7] text-ink/70">
-                        Youth-led work that improves life in the county. Clean-ups, awareness drives, sports and public activities.
+                        Mobilizing and uniting youth groups across the county so young people speak and act with one strong voice.
                     </p>
                 </div>
             </article>
@@ -540,13 +643,102 @@ tailwind.config = {
     </div>
 </section>
 
+<!-- WHO WE SERVE -->
+<section class="py-24 md:py-32 bg-cream">
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-end mb-14 reveal">
+            <div class="lg:col-span-8">
+                <p class="num-badge mb-4">Who we serve</p>
+                <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5">
+                    Every youth group has a seat at this table.
+                </h2>
+                <p class="text-[15.5px] leading-[1.75] text-ink/75 max-w-xl">
+                    YRC-YA is not one group. It is a home for all the youth groups that make Yei what it is — and no young person is left out because of gender, ability, faith or background.
+                </p>
+            </div>
+            <div class="lg:col-span-4 lg:text-right">
+                <div class="inline-flex items-center gap-3 text-[13px] text-mute">
+                    <span>Open to all</span>
+                    <span class="w-10 h-px bg-coral/40"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="bike" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Boda-boda group</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    The riders who keep Yei moving. We organize, train and give them a real voice in county decisions.
+                </p>
+            </article>
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal d1">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="accessibility" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Persons with disabilities</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    Ensuring no young person is left out of opportunities, programs or decisions because of ability.
+                </p>
+            </article>
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal d2">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="church" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Faith-based groups</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    Working hand in hand with youth fellowships and faith communities across the county — non-religious in our work, inclusive in our reach.
+                </p>
+            </article>
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="music" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Music &amp; drama groups</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    Creative youth using art, music and performance to speak truth, build peace and mobilize their communities.
+                </p>
+            </article>
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal d1">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="heart" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Women &amp; girls</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    Supporting young women to lead, learn and earn — without discrimination on gender or any other affiliation.
+                </p>
+            </article>
+
+            <article class="bg-soft rounded-2xl border border-line p-7 hover-lift reveal d2">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="book-open" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Students &amp; out-of-school youth</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70">
+                    Reaching both those in school and those who need a second chance through formal education or vocational skills.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
 <!-- PROJECTS -->
-<section id="projects" class="py-24 md:py-32 bg-cream">
+<section id="projects" class="py-24 md:py-32 bg-soft border-y border-line">
     <div class="max-w-6xl mx-auto px-6">
 
         <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
             <div>
-                <p class="num-badge mb-4">03 / Projects</p>
+                <p class="num-badge mb-4">04 / Projects</p>
                 <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] max-w-xl">
                     Things we are building right now.
                 </h2>
@@ -559,12 +751,12 @@ tailwind.config = {
         <div class="space-y-6">
 
             <!-- Project 1 -->
-            <article class="grid lg:grid-cols-12 gap-8 items-center bg-soft rounded-3xl border border-line overflow-hidden reveal">
+            <article class="grid lg:grid-cols-12 gap-8 items-center bg-cream rounded-3xl border border-line overflow-hidden reveal">
                 <div class="lg:col-span-5">
                     <div class="imgz h-full">
                         <img
                             src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
-                            alt="Youth centre construction site"
+                            alt="Youth centre construction site in Yei"
                             class="w-full h-[300px] lg:h-[380px] object-cover"
                         >
                     </div>
@@ -579,20 +771,20 @@ tailwind.config = {
                         Youth Multipurpose and Development Centre
                     </h3>
                     <p class="text-[15px] leading-[1.75] text-ink/75 mb-6">
-                        A permanent space for youth in Yei. The centre will host trainings, meetings, creative work and community events. Construction is ongoing and every step brings it closer to opening.
+                        A permanent space for youth in Yei. The centre will host trainings, meetings, creative work and community impact forums. Construction is ongoing and every step brings it closer to opening.
                     </p>
                     <ul class="space-y-2.5 mb-7">
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Space for training and workshops
+                            Space for training, teaching and workshops
                         </li>
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Community meeting rooms
+                            Community meeting and impact forum rooms
                         </li>
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Creative and innovation studios
+                            Creative, music, drama and innovation studios
                         </li>
                     </ul>
                     <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[14px]">
@@ -602,12 +794,12 @@ tailwind.config = {
             </article>
 
             <!-- Project 2 -->
-            <article class="grid lg:grid-cols-12 gap-8 items-center bg-soft rounded-3xl border border-line overflow-hidden reveal">
+            <article class="grid lg:grid-cols-12 gap-8 items-center bg-cream rounded-3xl border border-line overflow-hidden reveal">
                 <div class="lg:col-span-5 lg:order-2">
                     <div class="imgz h-full">
                         <img
                             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-                            alt="Young people working on creative ideas"
+                            alt="Young people working on creative and innovation ideas"
                             class="w-full h-[300px] lg:h-[380px] object-cover"
                         >
                     </div>
@@ -622,24 +814,67 @@ tailwind.config = {
                         Youth Empowerment Initiative on Creativity and Innovation
                     </h3>
                     <p class="text-[15px] leading-[1.75] text-ink/75 mb-6">
-                        Launched in Yei River County to give young people room to create, experiment and build. The initiative supports youth-led ideas that solve real problems in their own communities.
+                        Launched in Yei River County to give young people room to create, experiment and build. The initiative supports youth-led ideas and income-generating initiatives that solve real problems in their own communities.
                     </p>
                     <ul class="space-y-2.5 mb-7">
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Mentorship for young creators
+                            Mentorship for young creators and innovators
                         </li>
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Space to test new ideas
+                            Space and support to test new ideas
                         </li>
                         <li class="flex items-start gap-3 text-[14px] text-ink/80">
                             <span class="tick"><i data-lucide="check"></i></span>
-                            Support to turn ideas into action
+                            Help turning ideas into income and action
                         </li>
                     </ul>
                     <a href="#involved" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[14px]">
                         Join the initiative <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="grid lg:grid-cols-12 gap-8 items-center bg-cream rounded-3xl border border-line overflow-hidden reveal">
+                <div class="lg:col-span-5">
+                    <div class="imgz h-full">
+                        <img
+                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+                            alt="Youth impact forum and community dialogue"
+                            class="w-full h-[300px] lg:h-[380px] object-cover"
+                        >
+                    </div>
+                </div>
+                <div class="lg:col-span-7 p-7 md:p-10">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-mute">Ongoing</span>
+                        <span class="w-1 h-1 rounded-full bg-mute"></span>
+                        <span class="text-[11px] uppercase tracking-[0.16em] text-coral font-medium">Active</span>
+                    </div>
+                    <h3 class="font-display text-[22px] md:text-[28px] leading-[1.15] mb-4">
+                        Youth Engagement &amp; Impact Forums
+                    </h3>
+                    <p class="text-[15px] leading-[1.75] text-ink/75 mb-6">
+                        A rolling series of forums across the payams where young people from every youth group come together to speak, be heard and hold decision-makers accountable.
+                    </p>
+                    <ul class="space-y-2.5 mb-7">
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Payam-level youth dialogues
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Amplifying local voices to county leadership
+                        </li>
+                        <li class="flex items-start gap-3 text-[14px] text-ink/80">
+                            <span class="tick"><i data-lucide="check"></i></span>
+                            Peace, inclusivity and behaviour change conversations
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[14px]">
+                        Host a forum <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
                 </div>
             </article>
@@ -657,7 +892,7 @@ tailwind.config = {
 
         <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
             <div>
-                <p class="num-badge mb-4" style="color:#E9A94A;">04 / Updates</p>
+                <p class="num-badge mb-4" style="color:#E9A94A;">05 / Updates</p>
                 <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] max-w-lg text-cream">
                     What has been happening in Yei.
                 </h2>
@@ -744,7 +979,7 @@ tailwind.config = {
         </p>
         <div class="inline-flex items-center gap-3 text-[13px] text-mute">
             <span class="w-8 h-px bg-coral/40"></span>
-            <span>Yei River County Youth Association</span>
+            <span>Yei River County Youth Association (YRC-YA)</span>
             <span class="w-8 h-px bg-coral/40"></span>
         </div>
     </div>
@@ -755,7 +990,7 @@ tailwind.config = {
     <div class="max-w-6xl mx-auto px-6">
 
         <div class="max-w-2xl mb-14 reveal">
-            <p class="num-badge mb-4">05 / Get involved</p>
+            <p class="num-badge mb-4">06 / Get involved</p>
             <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5">
                 There is a place for you here.
             </h2>
@@ -764,13 +999,13 @@ tailwind.config = {
             </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
 
             <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal">
                 <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
                     <i data-lucide="user-plus" class="w-5 h-5 text-coral"></i>
                 </div>
-                <h3 class="font-display text-[20px] mb-3">Join the association</h3>
+                <h3 class="font-display text-[19px] mb-3">Join the association</h3>
                 <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
                     If you are a young person in Yei River County, you are welcome to be part of the association. Reach out and we will connect you with the right people.
                 </p>
@@ -783,22 +1018,35 @@ tailwind.config = {
                 <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
                     <i data-lucide="users" class="w-5 h-5 text-coral"></i>
                 </div>
-                <h3 class="font-display text-[20px] mb-3">Volunteer</h3>
+                <h3 class="font-display text-[19px] mb-3">Register your youth group</h3>
                 <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
-                    Trainers, mentors, organizers and people with skills to share are always needed. If you can give time, we will find a way to use it well.
+                    Boda-boda, disability, faith-based, music, drama, women's and students' groups — bring your group into the network and grow with us.
+                </p>
+                <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
+                    Register <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                </a>
+            </article>
+
+            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal d2">
+                <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
+                    <i data-lucide="heart-handshake" class="w-5 h-5 text-coral"></i>
+                </div>
+                <h3 class="font-display text-[19px] mb-3">Volunteer</h3>
+                <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
+                    Trainers, mentors, teachers, organizers and people with skills to share are always needed. If you can give time, we will use it well.
                 </p>
                 <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
                     Volunteer <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
                 </a>
             </article>
 
-            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal d2">
+            <article class="bg-cream rounded-2xl border border-line p-7 hover-lift reveal d3">
                 <div class="w-11 h-11 rounded-xl bg-coral/10 flex items-center justify-center mb-5">
                     <i data-lucide="handshake" class="w-5 h-5 text-coral"></i>
                 </div>
-                <h3 class="font-display text-[20px] mb-3">Partner with us</h3>
+                <h3 class="font-display text-[19px] mb-3">Partner with us</h3>
                 <p class="text-[14px] leading-[1.7] text-ink/70 mb-6">
-                    NGOs, businesses, churches and community groups are welcome to work with us. We are open to new partnerships that help youth in Yei.
+                    Local, national and international stakeholders — NGOs, businesses, churches and community groups — are welcome to work with us.
                 </p>
                 <a href="#contact" class="btn-arrow inline-flex items-center gap-2 text-coral font-medium text-[13.5px]">
                     Partner with us <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
@@ -816,12 +1064,12 @@ tailwind.config = {
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
             <div class="lg:col-span-5 reveal">
-                <p class="num-badge mb-4">06 / Contact</p>
+                <p class="num-badge mb-4">07 / Contact</p>
                 <h2 class="font-display text-[2rem] md:text-[2.6rem] leading-[1.1] mb-5">
                     Talk to the office.
                 </h2>
                 <p class="text-[15.5px] leading-[1.75] text-ink/75 mb-10">
-                    Whether you want to join, volunteer, partner or just ask a question, you can reach the Office of the Chairman directly.
+                    Whether you want to join, register a youth group, volunteer, partner or just ask a question, you can reach YRC-YA directly.
                 </p>
 
                 <div class="space-y-5">
@@ -832,7 +1080,7 @@ tailwind.config = {
                         </div>
                         <div class="pt-0.5">
                             <p class="text-[11.5px] uppercase tracking-[0.14em] text-mute mb-1">Location</p>
-                            <p class="text-[15px] text-ink">Yei River County, South Sudan</p>
+                            <p class="text-[15px] text-ink">Yei River County, Central Equatoria State, South Sudan</p>
                         </div>
                     </div>
 
@@ -855,6 +1103,16 @@ tailwind.config = {
                             <a href="https://facebook.com" target="_blank" rel="noopener" class="text-[15px] text-ink hover:text-coral transition">
                                 Yei River County Youth Association
                             </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-soft border border-line flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="badge-check" class="w-5 h-5 text-coral"></i>
+                        </div>
+                        <div class="pt-0.5">
+                            <p class="text-[11.5px] uppercase tracking-[0.14em] text-mute mb-1">Status</p>
+                            <p class="text-[15px] text-ink">Independent · Non-political · Non-religious · Non-profit</p>
                         </div>
                     </div>
 
@@ -883,6 +1141,7 @@ tailwind.config = {
                             <select class="w-full px-4 py-3 rounded-lg border border-line bg-cream text-[14.5px] text-ink focus:border-coral focus:ring-1 focus:ring-coral/20 outline-none transition">
                                 <option disabled selected>Choose one</option>
                                 <option>Joining the association</option>
+                                <option>Registering a youth group</option>
                                 <option>Volunteering</option>
                                 <option>Partnership</option>
                                 <option>Supporting a project</option>
@@ -915,7 +1174,7 @@ tailwind.config = {
             Youth voices. Youth action.
         </h2>
         <p class="text-[15.5px] leading-[1.75] text-cream/70 max-w-2xl mx-auto mb-9">
-            If you are a young person in Yei River County, or if you want to support the young people who live here, this is your office too.
+            If you are a young person in Yei River County, or if you want to support the young people who live here, this is your association too.
         </p>
         <div class="flex flex-wrap justify-center gap-3">
             <a href="#involved" class="inline-flex items-center gap-2 bg-gold text-navyDeep font-medium px-6 py-3.5 rounded-full hover:bg-cream transition">
@@ -941,12 +1200,12 @@ tailwind.config = {
                         <i data-lucide="sparkles" class="w-5 h-5 text-cream"></i>
                     </div>
                     <div>
-                        <p class="font-display text-[18px] text-cream leading-tight">Yei River County</p>
-                        <p class="text-[10px] uppercase tracking-[0.16em] text-cream/50">Youth Association</p>
+                        <p class="font-display text-[18px] text-cream leading-tight">YRC-YA</p>
+                        <p class="text-[10px] uppercase tracking-[0.16em] text-cream/50">Yei River County Youth Association</p>
                     </div>
                 </div>
                 <p class="text-[14px] leading-[1.75] text-cream/65 max-w-sm mb-6">
-                    A youth-driven platform for leadership, skills development, advocacy and positive engagement in Yei River County, South Sudan.
+                    An independent, youth-led, non-political, non-religious, non-profit initiative mobilizing, uniting, empowering and advocating for young people in Yei River County, Central Equatoria State.
                 </p>
                 <a href="#involved" class="inline-flex items-center gap-2 bg-coral hover:bg-[#c55a3d] text-cream font-medium px-5 py-2.5 rounded-full text-[13.5px] transition">
                     Get involved <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
@@ -957,6 +1216,7 @@ tailwind.config = {
                 <p class="text-cream text-[13px] font-medium uppercase tracking-[0.1em] mb-5">Explore</p>
                 <ul class="space-y-3 text-[13.5px]">
                     <li><a href="#about" class="text-cream/60 hover:text-cream transition">About</a></li>
+                    <li><a href="#vision" class="text-cream/60 hover:text-cream transition">Vision &amp; values</a></li>
                     <li><a href="#work" class="text-cream/60 hover:text-cream transition">What we do</a></li>
                     <li><a href="#projects" class="text-cream/60 hover:text-cream transition">Projects</a></li>
                     <li><a href="#updates" class="text-cream/60 hover:text-cream transition">Updates</a></li>
@@ -981,8 +1241,8 @@ tailwind.config = {
                         <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-cream transition">Yei River County Youth Association</a>
                     </li>
                     <li class="flex items-start gap-3">
-                        <i data-lucide="landmark" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
-                        <span>Office of the Chairman</span>
+                        <i data-lucide="shield-check" class="w-4 h-4 mt-0.5 text-coral flex-shrink-0"></i>
+                        <span>Independent · Non-profit · Youth-led</span>
                     </li>
                 </ul>
             </div>
@@ -990,7 +1250,7 @@ tailwind.config = {
         </div>
 
         <div class="border-t border-white/[0.08] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-[12.5px] text-cream/45">
-            <p>&copy; 2026 Yei River County Youth Association. All rights reserved.</p>
+            <p>&copy; 2026 Yei River County Youth Association (YRC-YA). All rights reserved.</p>
             <p>Youth voices. Youth action.</p>
         </div>
     </div>
